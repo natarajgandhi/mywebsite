@@ -98,7 +98,7 @@ function createInstance(sgName, keyName) {
     SecurityGroups: [
       sgName
     ],
-    UserData: "IyEvYmluL2Jhc2gKY3VybCAtLXNpbGVudCAtLWxvY2F0aW9uIGh0dHBzOi8vcnBtLm5vZGVzb3VyY2UuY29tL3NldHVwXzgueCB8IHN1ZG8gYmFzaCAtCnN1ZG8geXVtIGluc3RhbGwgLXkgbm9kZWpzCnN1ZG8geXVtIGluc3RhbGwgLXkgZ2l0CmdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vYXlvaXNhaWFoL25vZGUtZXhwcmVzcy13ZWJzaXRlLmdpdCBoYmZsCmNkIGhiZmwKbnBtIGkKbnBtIHJ1biBzdGFydAoK"
+    UserData: "IyEvYmluL2Jhc2gKY3VybCAtLXNpbGVudCAtLWxvY2F0aW9uIGh0dHBzOi8vcnBtLm5vZGVzb3VyY2UuY29tL3NldHVwXzgueCB8IHN1ZG8gYmFzaCAtCnN1ZG8geXVtIGluc3RhbGwgLXkgbm9kZWpzCnN1ZG8geXVtIGluc3RhbGwgLXkgZ2l0CmdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vbmF0YXJhamdhbmRoaS9teXdlYnNpdGUuZ2l0IGhiZmwKY2QgaGJmbApucG0gaQpucG0gcnVuIHN0YXJ0"
   }
   return new Promise((resolve, reject) => {
     ec2.runInstances(params, (err, data) => {
